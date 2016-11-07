@@ -9,4 +9,13 @@ nav a,nav i{
   color: #ffffff;
 }
 
+#intro.row{
+  min-height: 800px;
+  border-bottom: solid 5px red;
+}
+#quote.row{
+  min-height: 800px;
+  border-bottom: solid 5px orange;
+}
+
 
