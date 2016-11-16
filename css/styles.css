@@ -1,17 +1,30 @@
 body{
-  color: #1d1f21;
+  background-color: #1d1f21;
 }
 nav{
   background-color: #1d1f21;
-
 }
-nav a,nav i{
+nav a,nav i,*{
   color: #ffffff;
 }
-
+/*.vcenter{
+    display: flex;
+    align-items: center;
+}*/
 #intro.row{
-  min-height: 800px;
+  margin-top:50px;
+  background-image: url(../img/PBD.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 650px;
   border-bottom: solid 5px red;
+}
+#intro.row .col-xs-12{
+  margin-top: 250px;
+}
+#intro.row h1{
+  font-size: 80px;
+  text-align: center;
 }
 #quote.row{
   min-height: 800px;
