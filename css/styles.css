@@ -2,16 +2,22 @@
 
 /* Global Styles/ Helper classes*/
 
-body{
-  background-color: #1d1f21;
-}
-nav{
+body,nav{
   background-color: #1d1f21;
 }
 *{
-  color: #ffffff;
+  color: #ECEBEE;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
+}
+.yellow{
+  color: #FAC93B;
+}
+.orange{
+  color: #F5A332;
+}
+.red{
+  color: #E46930;
 }
 /*.vcenter{
     display: flex;
@@ -74,11 +80,9 @@ nav a,nav i{
   padding-left: 10px;
 }
 .reference p:first-child{
-  font-size: 1.1em;
+  font-size: 1.15em;
 }
-.reference p, .reference em{
-  color: #d3d3d3;
-}
+
 
 
 
