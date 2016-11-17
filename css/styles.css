@@ -1,34 +1,97 @@
+/* Portfolio created by Steven Aldous, 11/16/16 */
+
+/* Global Styles/ Helper classes*/
+
 body{
   background-color: #1d1f21;
 }
 nav{
   background-color: #1d1f21;
 }
-nav a,nav i,*{
+*{
   color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
 }
 /*.vcenter{
     display: flex;
     align-items: center;
 }*/
+
+/* Nav Styles */
+nav a,nav i{
+  color: #ffffff;
+}
+.navbar-brand{
+  padding-top: 37px;
+  font-size: 1.5em;
+}
+.navbar-toggle{
+  padding-top: 21.5px;
+}
+
+
 #intro.row{
   margin-top:50px;
   background-image: url(../img/PBD.jpg);
   background-size: cover;
   background-position: center;
   min-height: 650px;
-  border-bottom: solid 5px red;
 }
+
+/*Intro Styles */
 #intro.row .col-xs-12{
-  margin-top: 250px;
+  margin-top: 225px;
 }
 #intro.row h1{
-  font-size: 80px;
+  font-size: 8em;
+  font-weight: 900;
   text-align: center;
 }
 #quote.row{
-  min-height: 800px;
+  min-height: 300px;
   border-bottom: solid 5px orange;
+  padding: 50px 0px;
+}
+#quote.row p{
+  text-align: justify;
+  margin-bottom: 0px;
+}
+#quote.row strong{
+  font-size: 1.25em;
+}
+#quote.row .left,#quote.row .right{
+  /*background-color: red;*/
+}
+#quote.row .left{
+  padding:  50px 0px;
+}
+#quote.row .right{
+  padding:  50px 0px 50px 30px;
+}
+.reference{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.reference p:first-child{
+  font-size: 1.1em;
+}
+.reference p, .reference em{
+  color: #d3d3d3;
 }
 
+
+
+/* media queries*/
+@media (min-width: 768px){
+  .navbar-brand{
+    padding-top: 15px;
+  }
+  #quote.row{
+    padding: 100px 0px;
+  }
+  #quote.row .left{
+    padding:  92px 30px 92px 0px;
+  }
+}
 
