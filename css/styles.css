@@ -82,7 +82,18 @@ nav a,nav i{
 .reference p:first-child{
   font-size: 1.15em;
 }
+/* projects */
+#projects.row .left,#projects.row .right{
+  border: 5px solid orange;
+  min-height: 400px;
 
+}
+#projects.row .left{
+  background-color: red;
+}
+#projects.row .right{
+  background-color: yellow;
+}
 
 
 
