@@ -17,6 +17,9 @@ a:hover{
   color: #E46930;
   text-decoration: none;
 }
+.justify{
+  text-align: justify;
+}
 .yellow{
   color: #FAC93B;
 }
@@ -32,11 +35,66 @@ a.yellow:hover, a.orange:hover, a.red:hover{
 .no-padding{
   padding: 0;
 }
+hr.orange, hr.yellow,hr.red{
+  position: relative;
+  z-index: -100;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0;
+}
+hr.orange{
+  border-bottom: 2.5px solid #F5A332;
+}
+hr.yellow{
+  border-bottom: 2.5px solid #FAC93B;
+}
+hr.red{
+  border-bottom: 2.5px solid #E46930;
+}
+.row.section-header{
+  position: relative;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
 
-/*.vcenter{
-    display: flex;
-    align-items: center;
-}*/
+}
+.row.section-header div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  text-align: center;
+  border: solid 5px #E46930;
+  background-color: #1d1f21;
+  border-radius: 15px;
+  padding: 0.5em 2em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px auto;
+}
+.row.section-header h1{
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.row.section-header hr{
+  z-index: -100;
+}
+.row.section-header hr.orange, .row.section-header hr.yellow,.row.section-header hr.red{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.row.section-header hr.orange{
+  border-bottom: 5px solid #F5A332;
+}
+.row.section-header hr.yellow{
+  border-bottom: 5px solid #FAC93B;
+}
+.row.section-header hr.red{
+  border-bottom: 5px solid #E46930;
+}
 
 /* Nav Styles */
 nav a,nav i{
@@ -73,7 +131,7 @@ nav a,nav i{
 }
 #quote.row{
   min-height: 300px;
-  padding: 50px 0px;
+  padding: 50px 0px 0px 0px;
 }
 #quote.row p{
   text-align: justify;
@@ -96,15 +154,9 @@ nav a,nav i{
   font-size: 1.15em;
 }
 /* projects */
-#projects.row .left, #projects.row .right{
-  /*position: relative;*/
 
-}
 #projects.row .box{
-  /*position: absolute;
-  top: -50%;
-  transform: translateY(50%);*/
-  padding: 0px 20px;
+  padding: 15px 20px;
 }
 #projects.row a{
   text-transform: uppercase;
@@ -114,31 +166,36 @@ nav a,nav i{
 }
 
 #projects.row .desc{
+  padding-top: 25px;
   text-align: justify;
+}
+#projects.row .sep.row{
+  margin-top: 25px;
 }
 /* About */
 #about.row{
   min-height: 400px;
-  background-color: green;
+
 }
 /* contact */
 #contact.row{
   min-height: 400px;
-  background-color: purple;
 }
+
 /* media queries*/
 @media (min-width: 768px){
   .navbar-brand{
     padding-top: 15px;
   }
-  #quote.row{
-    padding: 100px 0px;
-  }
+
   #quote.row .left{
     padding:  92px 30px 92px 0px;
   }
   #projects.row .box{
     padding: 10px 40px;
-}
+  }
+  #projects.row .sep.row{
+    margin-bottom: 25px;
+  }
 }
 
