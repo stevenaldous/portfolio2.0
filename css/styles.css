@@ -29,6 +29,9 @@ a:hover{
 .red{
   color: #E46930;
 }
+.center{
+  text-align: center;
+}
 a.yellow:hover, a.orange:hover, a.red:hover{
   color: #fff;
 }
@@ -181,7 +184,10 @@ nav a,nav i{
 #contact.row{
   min-height: 400px;
 }
-
+/*footer*/
+footer{
+  margin-top: 100px;
+}
 /* media queries*/
 @media (min-width: 768px){
   .navbar-brand{
